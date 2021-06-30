@@ -25,8 +25,5 @@
 		"@types/react-dom": "17.0.8",
 		"ts-node": "10.0.0"
 	},
-	"scripty": {
-		"path": "../../scripts/packages"
-	},
 	"license": "MIT"
 }
