@@ -1,4 +1,5 @@
 const { join } = require('path')
+
 const workspace = join(__dirname, '..')
 
 module.exports = {
