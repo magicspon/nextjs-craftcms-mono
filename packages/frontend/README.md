@@ -1,0 +1,3 @@
+# @oomph/app
+
+Next.js Typescript application...
