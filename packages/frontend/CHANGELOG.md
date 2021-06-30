@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 0.0.2 (2021-06-30)
+
+**Note:** Version bump only for package @spon/frontend
+
+
+
+
+
 ### [1.0.8](https://github.com/magicspon/mono-starter/compare/@spon/frontend@1.0.6...@spon/frontend@1.0.8) (2021-06-30)
 
 
