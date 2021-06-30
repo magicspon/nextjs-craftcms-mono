@@ -22,7 +22,8 @@
 		"app:start": "lerna run --scope=@spon/frontend start",
 		"lint": "lerna run --scope=@spon/frontend lint",
 		"pretify": "prettier --write .",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"release": "lerna version --conventional-commits"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.6",
