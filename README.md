@@ -23,8 +23,13 @@
 
 - `yarn dev` : starts the next js web server
 - `yarn storybook` : starts the storybook server
-- `yarn hygen` : scaffold a new page/component/context provider
 - `yarn release` : tag a release, update changelog
+
+## Code scaffold
+
+- `yarn new:component` : create a new component
+- `yarn new:page` : create a new nextjs page
+- `yarn new:context` : create a new context provider
 
 ### Packages
 
