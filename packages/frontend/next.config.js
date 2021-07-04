@@ -11,6 +11,10 @@ module.exports = {
 			rules: [
 				...config.module.rules,
 				{
+					test: /\.svg$/,
+					use: ['@svgr/webpack'],
+				},
+				{
 					test: /\.(js|jsx|ts|tsx)$/,
 					include: [workspace],
 					exclude: /node_modules/,
