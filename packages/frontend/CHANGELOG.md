@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.0.5...@spon/frontend@0.1.0) (2021-07-04)
+
+
+### Features
+
+* add tailwind, stylelint, and ts path alias ([1e81aa3](https://github.com/magicspon/nextjs-craftcms-mono/commit/1e81aa32ec097b73d13eae703a1281f3870151b5))
+* support svg components ([d6d348a](https://github.com/magicspon/nextjs-craftcms-mono/commit/d6d348a2abec01d0c239a0ef8ffff00bb0b104e9))
+
+
+
 ### [0.0.5](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.0.4...@spon/frontend@0.0.5) (2021-06-30)
 
 
