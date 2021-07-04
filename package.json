@@ -17,7 +17,7 @@
 	],
 	"scripts": {
 		"dev": "lerna run dev --scope=@spon/frontend --stream",
-		"storybook": "lerna run storybook --scope=@spon/frontend --stream",
+		"storybook": "cd packages/frontend && yarn storybook",
 		"build": "lerna run --parallel build",
 		"app:build": "lerna run --scope=@spon/frontend build",
 		"app:start": "lerna run --scope=@spon/frontend start",
@@ -50,6 +50,7 @@
 		"lerna": "^4.0.0",
 		"lerna-changelog": "^1.0.1",
 		"postcss": "^8.3.5",
+		"postcss-loader": "^6.1.1",
 		"prettier": "^2.3.2",
 		"stylelint": "^13.13.1",
 		"stylelint-config-prettier": "^8.0.2",
