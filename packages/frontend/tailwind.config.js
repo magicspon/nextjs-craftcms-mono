@@ -15,6 +15,17 @@ module.exports = {
 	mode: 'jit',
 	purge: ['./src/**/*.{js,ts,jsx,tsx}'],
 
+	experimental: {
+		applyComplexClasses: true,
+	},
+
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true,
+		defaultLineHeights: true,
+		applyComplexClasses: true,
+	},
+
 	theme: {
 		extend: {},
 	},

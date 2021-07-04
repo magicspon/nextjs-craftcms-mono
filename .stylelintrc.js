@@ -1,6 +1,6 @@
 module.exports = {
 	extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
-	ignoreFiles: ['packages/cms/**/*.css'],
+	ignoreFiles: ['packages/cms/**/*.css', '**/*.tsx'],
 	plugins: [],
 	rules: {
 		'at-rule-no-unknown': [

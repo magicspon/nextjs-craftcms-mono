@@ -4,6 +4,11 @@ const workspace = join(__dirname, '..')
 
 module.exports = {
 	poweredByHeader: false,
+
+	eslint: {
+		dirs: ['src'],
+	},
+
 	webpack: (config, options) => {
 		/** Allows import modules from packages in workspace. */
 		config.module = {

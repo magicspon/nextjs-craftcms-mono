@@ -11,6 +11,7 @@ function IndexPage(): JSX.Element {
 				</a>{' '}
 				feature:
 			</p>
+
 			<p>The following Button resolved using custom alias configuration:</p>
 		</Box>
 	)
