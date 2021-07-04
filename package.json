@@ -24,7 +24,9 @@
 		"lint": "lerna run --scope=@spon/frontend lint",
 		"pretify": "prettier --write .",
 		"prepare": "husky install",
-		"release": "lerna version --conventional-commits"
+		"release": "lerna version --conventional-commits",
+		"hygen": "hygen",
+		"component:new": "hygen component with-prompt"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.6",
