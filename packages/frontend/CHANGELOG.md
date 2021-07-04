@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.2.0...@spon/frontend@0.3.0) (2021-07-04)
+
+
+### Features
+
+* add hygen code scaffolding ([58ca2aa](https://github.com/magicspon/nextjs-craftcms-mono/commit/58ca2aaa0598122fcb30157177f292aeeb1308d3))
+
+
+
 ## [0.2.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.1.1...@spon/frontend@0.2.0) (2021-07-04)
 
 
