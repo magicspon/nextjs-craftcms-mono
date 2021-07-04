@@ -9,7 +9,8 @@
 		"isolatedModules": true,
 		"paths": {
 			"@components/*": ["src/components/*"],
-			"@graphql/*": ["src/graphql/*"],
+			"@containers/*": ["src/containers/*"],
+			"@gql/*": ["src/gql/*"],
 			"@lib/*": ["src/lib/*"],
 			"@styles/*": ["src/styles/*"],
 			"@svgs/*": ["src/svgs/*"],
