@@ -1,106 +1,17 @@
-dateModified: 1615144400
+dateModified: 1625433713
 email:
-  fromEmail: andrew@nystudio107.com
-  fromName: Craft
+  fromEmail: hello@spon.io
+  fromName: 'NextJs Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
-plugins:
-  fastcgi-cache-bust:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  image-optimize:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_IMAGEOPTIMIZE_LICENSE
-    schemaVersion: 1.0.0
-    settings:
-      allowUpScaledImageVariants: false
-      assetVolumeSubFolders: true
-      autoSharpenScaledImages: true
-      createColorPalette: true
-      createPlaceholderSilhouettes: false
-      imageTransformTypeSettings:
-        __assoc__:
-          -
-            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
-            -
-              __assoc__:
-                -
-                  - domain
-                  - ''
-                -
-                  - apiKey
-                  - ''
-                -
-                  - securityToken
-                  - ''
-          -
-            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - $SERVERLESS_SHARP_CLOUDFRONT_URL
-          -
-            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - ''
-                -
-                  - securityKey
-                  - ''
-                -
-                  - includeBucketPrefix
-                  - ''
-      lowerQualityRetinaImageVariants: false
-      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
-  minify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  retour:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_RETOUR_LICENSE
-    schemaVersion: 3.0.9
-  seomatic:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_SEOMATIC_LICENSE
-    schemaVersion: 3.0.9
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  twigpack:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  typogrify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  webperf:
-    edition: standard
-    enabled: true
-    licenseKey: $PLUGIN_WEBPERF_LICENSE
-    schemaVersion: 1.0.1
 system:
-  edition: pro
+  edition: solo
   live: true
-  name: Project
-  retryDuration: 60
-  schemaVersion: 3.6.6
-  timeZone: America/New_York
+  name: 'NextJs Craft Starter'
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
   defaultGroup: null
-  photoSubpath: ''
+  photoSubpath: null
   photoVolumeUid: null
   requireEmailVerification: true

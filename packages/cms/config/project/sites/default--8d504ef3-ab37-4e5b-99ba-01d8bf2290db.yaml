@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: 'NextJs Craft Starter'
+primary: true
+siteGroup: ba81e097-891b-401c-ac24-ae225929a586 # NextJs Craft Starter
+sortOrder: 1

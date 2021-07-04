@@ -22,33 +22,7 @@ use craft\helpers\App;
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
-        'site-module' => [
-            'class' => \modules\sitemodule\SiteModule::class,
-        ],
+        'my-module' => \modules\Module::class,
     ],
-    'bootstrap' => ['site-module'],
-    'components' => [
-        'cache' => [
-            'class' => yii\redis\Cache::class,
-            'keyPrefix' => App::env('APP_ID') ?: 'CraftCMS',
-            'redis' => [
-                'hostname' => App::env('REDIS_HOSTNAME'),
-                'port' => App::env('REDIS_PORT'),
-                'database' => App::env('REDIS_CRAFT_DB'),
-            ],
-        ],
-        'deprecator' => [
-            'throwExceptions' => App::env('DEV_MODE'),
-        ],
-        'queue' => [
-            'class' => craft\queue\Queue::class,
-            'ttr' => 10 * 60,
-        ],
-        'redis' => [
-            'class' => yii\redis\Connection::class,
-            'hostname' => App::env('REDIS_HOSTNAME'),
-            'port' => App::env('REDIS_PORT'),
-            'database' => App::env('REDIS_DEFAULT_DB'),
-        ],
-    ],
+    //'bootstrap' => ['my-module'],
 ];

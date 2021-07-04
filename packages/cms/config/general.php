@@ -10,36 +10,40 @@
 
 use craft\helpers\App;
 
+$isDev = App::env('ENVIRONMENT') === 'dev';
+$isProd = App::env('ENVIRONMENT') === 'production';
+
 return [
-    // Craft config settings from .env variables
     'aliases' => [
-        '@assetsUrl' => App::env('ASSETS_URL'),
-        '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
-        '@web' => App::env('SITE_URL'),
-        '@webroot' => App::env('WEB_ROOT_PATH'),
+        '@assets' => getenv('ASSETS_URL'),
+        '@frontend' => getenv('FRONTEND_URL'),
+        '@preview' => getenv('PREVIEW_URL'),
+        '@webroot' => getenv('PRIMARY_SITE_PATH')
     ],
-    'allowUpdates' => (bool)App::env('ALLOW_UPDATES'),
-    'allowAdminChanges' => (bool)App::env('ALLOW_ADMIN_CHANGES'),
-    'backupOnUpdate' => (bool)App::env('BACKUP_ON_UPDATE'),
-    'devMode' => (bool)App::env('DEV_MODE'),
-    'enableTemplateCaching' => (bool)App::env('ENABLE_TEMPLATE_CACHING'),
-    'resourceBasePath' => App::env('WEB_ROOT_PATH').'/cpresources',
-    'runQueueAutomatically' => (bool)App::env('RUN_QUEUE_AUTOMATICALLY'),
-    'securityKey' => App::env('SECURITY_KEY'),
-    // Craft config settings from constants
-    'cacheDuration' => false,
-    'defaultSearchTermOptions' => [
-        'subLeft' => true,
-        'subRight' => true,
-    ],
-    'defaultTokenDuration' => 'P2W',
-    'enableCsrfProtection' => true,
-    'errorTemplatePrefix' => 'errors/',
-    'generateTransformsBeforePageLoad' => true,
-    'maxCachedCloudImageSize' => 3000,
-    'maxUploadFileSize' => '100M',
+
+    'baseCpUrl' => getenv('PRIMARY_SITE_URL'),
+    // Default Week Start Day (0 = Sunday, 1 = Monday...)
+    'defaultWeekStartDay' => 1,
+
+    // Whether generated URLs should omit "index.php"
     'omitScriptNameInUrls' => true,
-    'useEmailAsUsername' => true,
-    'usePathInfo' => true,
+
+    // The URI segment that tells Craft to load the control panel
+    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
+
+    // The secure key Craft will use for hashing and encrypting data
+    'securityKey' => App::env('SECURITY_KEY'),
+
+    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
+    'devMode' => $isDev,
+
+    // Whether administrative changes should be allowed
+    'allowAdminChanges' => $isDev,
+
+    // Whether crawlers should be allowed to index pages and following links
+    'disallowRobots' => !$isProd,
+
+    'headlessMode' => true,
+
     'useProjectConfigFile' => true,
 ];
