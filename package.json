@@ -51,6 +51,9 @@
 		"lerna": "^4.0.0",
 		"lerna-changelog": "^1.0.1",
 		"prettier": "^2.3.2",
+		"stylelint": "^13.13.1",
+		"stylelint-config-prettier": "^8.0.2",
+		"stylelint-config-standard": "^22.0.0",
 		"tsconfig-paths": "3.9.0",
 		"typescript": "4.3.4"
 	},
@@ -72,12 +75,11 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,json,js,jsx}": [
-			"eslint"
+			"eslint --cache --fix"
 		],
 		"**/*.{ts,tsx,json,js,jsx,css}": [
 			"prettier --write"
 		],
-		"*.js": "eslint --cache --fix",
 		"*.css": "stylelint --fix",
 		"*.--write": "prettier --write"
 	},

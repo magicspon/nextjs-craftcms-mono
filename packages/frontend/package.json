@@ -6,6 +6,7 @@
 		"build": "next build && tsc --project tsconfig.server.json",
 		"start": "next start",
 		"lint": "eslint --ignore-path .gitignore --ext .js .",
+		"lint-css": "stylelint ./**/*.css --quiet --fix",
 		"prettier": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
 		"format": "prettier --write \"src/**/*.{ts,tsx,json,js,jsx}\"",
 		"check-format": "yarn prettier -- --list-different",
@@ -23,6 +24,9 @@
 		"@types/node": "^15.12.5",
 		"@types/react": "^17.0.11",
 		"@types/react-dom": "17.0.8",
+		"postcss": "^8.3.5",
+		"postcss-preset-env": "^6.7.0",
+		"tailwindcss": "^2.2.4",
 		"ts-node": "10.0.0"
 	},
 	"license": "MIT"
