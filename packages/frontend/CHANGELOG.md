@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.1.1...@spon/frontend@0.2.0) (2021-07-04)
+
+
+### Features
+
+* storybook ts alias, storybook svgs ([a48effe](https://github.com/magicspon/nextjs-craftcms-mono/commit/a48effe74c3f8267498d52d5f2d06119533949f8))
+
+
+
 ### [0.1.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.1.0...@spon/frontend@0.1.1) (2021-07-04)
 
 
