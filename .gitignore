@@ -25,6 +25,7 @@ out/
 # misc
 .DS_Store
 *.pem
+*.cer
 
 # debug
 lerna-debug.log

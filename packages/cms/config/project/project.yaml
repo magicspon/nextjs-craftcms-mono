@@ -1,10 +1,45 @@
-dateModified: 1625433713
+dateModified: 1625434810
 email:
   fromEmail: hello@spon.io
   fromName: 'NextJs Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: J6J7AAV34JXJ5S51UYSOOHSR
+    schemaVersion: 1.1.11
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: DXDH61A3EXCNNUJDTNS6L1AD
+    schemaVersion: 3.0.10
+  splashing-images:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.2.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  webhooks:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'NextJs Craft Starter'
   schemaVersion: 3.6.8
