@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.4.0...@spon/frontend@0.5.0) (2021-07-05)
+
+
+### Features
+
+* add global data script ([e5fcb1d](https://github.com/magicspon/nextjs-craftcms-mono/commit/e5fcb1d70a331a3e1e71ee8b76e0650cc64ca89e))
+* **frontend:** add pages template ([453d8fd](https://github.com/magicspon/nextjs-craftcms-mono/commit/453d8fd6833ff67dc84f3b2f01f7655e20041d73))
+
+
+### Bug Fixes
+
+* reset gitignore ([80d21b5](https://github.com/magicspon/nextjs-craftcms-mono/commit/80d21b59d663a8e67de44c6c6cb4ca36464aa194))
+
+
+
 ## [0.4.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.3.0...@spon/frontend@0.4.0) (2021-07-05)
 
 
