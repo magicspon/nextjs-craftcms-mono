@@ -79,6 +79,8 @@ export const getStaticProps: GetStaticProps = async ({
 		}
 	}
 
+	// if it's preview mode, use the typeHandle passed from the preview api
+	// if we're building/dev mode, find the typeHandle from the data written to file
 	const entryType = preview ? typeHandle : await getEntryType('blog.data', slug)
 	const uri = `blog/${params.slug}`
 
