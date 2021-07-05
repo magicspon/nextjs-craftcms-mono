@@ -9,8 +9,12 @@ module.exports = {
 		dirs: ['src'],
 	},
 
+	images: {
+		sizes: [320, 480, 820, 1020],
+		domains: [process.env.IMAGE_DOMAIN],
+	},
+
 	webpack: (config, options) => {
-		/** Allows import modules from packages in workspace. */
 		config.module = {
 			...config.module,
 			rules: [
@@ -19,6 +23,7 @@ module.exports = {
 					test: /\.svg$/,
 					use: ['@svgr/webpack'],
 				},
+				/** Allows import modules from packages in workspace. */
 				{
 					test: /\.(js|jsx|ts|tsx)$/,
 					include: [workspace],

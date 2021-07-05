@@ -27,8 +27,8 @@
 		"release": "lerna version --conventional-commits",
 		"hygen": "hygen",
 		"new:component": "hygen component with-prompt",
-		"new:page": "hygen component with-prompt",
-		"new:context": "hygen component with-prompt"
+		"new:page": "hygen page with-prompt",
+		"new:context": "hygen context with-prompt"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.6",

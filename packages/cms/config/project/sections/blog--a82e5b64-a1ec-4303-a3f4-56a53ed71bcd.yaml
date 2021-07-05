@@ -9,7 +9,7 @@ previewTargets:
         - 'Primary entry page'
       -
         - urlFormat
-        - '{{ getenv(''PREVIEW_URL'') }}/api/preview?secret={{ getenv(''CMS_PREVIEW_TOKEN'') }}&entryUid={sourceUid}'
+        - '{{ getenv(''PREVIEW_URL'') }}/api/preview?token={{ getenv(''CMS_PREVIEW_TOKEN'') }}&entryUid={sourceUid}'
       -
         - refresh
         - '1'

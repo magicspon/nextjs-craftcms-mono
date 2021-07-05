@@ -1,0 +1,19 @@
+isPublic: false
+name: App
+scope:
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.a82e5b64-a1ec-4303-a3f4-56a53ed71bcd:read' # Blog
+  - 'entrytypes.67a1ce4b-345c-456a-a074-b260f85c0274:read' # Blog
+  - 'volumes.48b97265-8699-4399-a4a9-f63748b29a9b:read' # Images
+  - 'volumes.4febe1c1-57e8-4eaf-b476-8e2b265a0e23:read' # Documents
+  - 'volumes.218e4a7c-9717-4815-9100-92a99bc98205:read' # Video
+  - 'usergroups.everyone:read'
+  - 'formieForms.all:read'
+  - 'formieSubmissions.all:read'
+  - 'seomatic.all:read'
+  - 'formieSubmissions.all:edit'
+  - 'formieSubmissions.all:create'
+  - 'formieSubmissions.all:save'
+  - 'formieSubmissions.all:delete'
