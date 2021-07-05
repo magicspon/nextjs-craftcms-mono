@@ -1,15 +1,13 @@
 import * as R from 'ramda'
 
-export interface ISeoProps {
+interface ISeoProps {
 	metaTitleContainer: string
 	metaTagContainer: string
 	metaLinkContainer: string
 	metaJsonLdContainer: string
 }
 
-type IMetaTags = {
-	[k: string]: string[] | { [k: string]: any }
-}
+type Meta = { [k: string]: any }
 
 type TSEO = {
 	metaTitleContainer: {
@@ -17,12 +15,10 @@ type TSEO = {
 			title: string
 		}
 	}
-	metaTagContainer: IMetaTags
-	metaLinkContainer: IMetaTags
-	metaJsonLdContainer: IMetaTags
+	metaTagContainer: Meta
+	metaLinkContainer: Meta
+	metaJsonLdContainer: Meta
 }
-
-type Meta = { [k: string]: any }
 
 export interface ISEO {
 	title: string
@@ -34,9 +30,10 @@ export interface ISEO {
 const filterEmptyValues = (item: any): boolean => item?.length !== 0
 
 export default function parseSEO(seo: ISeoProps): ISEO {
-	const parsed = R.toPairs(seo).reduce<TSEO>((acc, [key, value]) => {
-		return { ...acc, [key]: JSON.parse(value) }
-	}, {} as TSEO)
+	const parsed = R.toPairs(seo).reduce<TSEO>(
+		(acc, [key, value]) => ({ ...acc, [key]: JSON.parse(value) }),
+		{} as TSEO,
+	)
 
 	const {
 		metaTitleContainer,

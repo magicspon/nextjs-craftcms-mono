@@ -4,7 +4,7 @@ to: packages/<%= package %>/src/components/<%= h.changeCase.pascalCase(name) %>/
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import <%= h.changeCase.pascalCase(name) %> from './<%= h.changeCase.pascalCase(name) %>';
+import <%= h.changeCase.pascalCase(name) %> from '.';
 
 export default {
   title: 'Example/<%= h.changeCase.pascalCase(name) %>',

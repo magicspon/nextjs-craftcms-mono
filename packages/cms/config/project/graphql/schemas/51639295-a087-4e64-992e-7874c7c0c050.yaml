@@ -14,6 +14,7 @@ scope:
   - 'volumes.48b97265-8699-4399-a4a9-f63748b29a9b:read' # Images
   - 'volumes.4febe1c1-57e8-4eaf-b476-8e2b265a0e23:read' # Documents
   - 'volumes.218e4a7c-9717-4815-9100-92a99bc98205:read' # Video
+  - 'globalsets.b7d092cb-9183-40fe-bfde-4796b697d503:read' # Contact
   - 'usergroups.everyone:read'
   - 'formieForms.all:read'
   - 'formieSubmissions.all:read'

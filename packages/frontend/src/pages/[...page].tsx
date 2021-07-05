@@ -76,12 +76,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 		params: { page: entry.uri.split('/') },
 	}))
 
-	console.log('[paths]', JSON.stringify(paths, null, 2))
-
 	await writeDataToDisk(JSON.stringify(entries), 'pages.data')
 
 	return {
-		paths: paths,
+		paths,
 		fallback: false,
 	}
 }
