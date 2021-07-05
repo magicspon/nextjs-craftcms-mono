@@ -21,6 +21,7 @@
 - Blog listing/pagination + entries
 - Home page entry
 - Pages structure (supports multiple types)
+- Global (build time) data
 - [SEOMatic](https://github.com/nystudio107/craft-seomatic) component
 
 ## Installation
