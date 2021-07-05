@@ -2,6 +2,8 @@
 	"name": "@spon/frontend",
 	"version": "0.4.0",
 	"scripts": {
+		"prewrite:data": "tsc scripts/writeGlobalDataToDisk.ts --outDir scripts/dist --types node --module commonjs --target ES2017 --esModuleInterop",
+		"write:data": "node ./scripts/dist/writeGlobalDataToDisk.js",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
@@ -15,7 +17,6 @@
 		"build-storybook": "build-storybook"
 	},
 	"dependencies": {
-		"@types/ramda": "^0.27.42",
 		"cross-env": "7.0.3",
 		"graphql": "^15.5.1",
 		"graphql-request": "^3.4.0",
@@ -37,6 +38,7 @@
 		"@testing-library/react": "^12.0.0",
 		"@types/graphql": "^14.5.0",
 		"@types/node": "^16.0.0",
+		"@types/ramda": "^0.27.42",
 		"@types/react": "^17.0.13",
 		"@types/react-dom": "17.0.8",
 		"autoprefixer": "^10.2.6",
