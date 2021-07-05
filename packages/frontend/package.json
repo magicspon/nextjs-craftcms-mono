@@ -1,6 +1,6 @@
 {
 	"name": "@spon/frontend",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"scripts": {
 		"prewrite:data": "tsc scripts/writeGlobalDataToDisk.ts --outDir scripts/dist --types node --module commonjs --target ES2017 --esModuleInterop",
 		"write:data": "node ./scripts/dist/scripts/writeGlobalDataToDisk.js",

@@ -13,6 +13,7 @@
 			"@components/*": ["src/components/*"],
 			"@containers/*": ["src/containers/*"],
 			"@gql/*": ["src/gql/*"],
+			"@data/*": ["src/data/*"],
 			"@lib/*": ["src/lib/*"],
 			"@styles/*": ["src/styles/*"],
 			"@svgs/*": ["src/svgs/*"],
@@ -21,5 +22,5 @@
 		}
 	},
 	"exclude": ["dist", ".next", "out", "next.config.ts"],
-	"include": ["next-env.d.ts", "src"]
+	"include": ["next-env.d.ts", "src", "src/**/*.json"]
 }

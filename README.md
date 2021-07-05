@@ -15,17 +15,30 @@
 - stylelint
 - commitlint
 
+## CraftCMS/Next
+
+- GraphQL api
+- Blog listing/pagination + entries
+- Home page entry
+- Pages structure (supports multiple types)
+- Global (build time) data
+- [SEOMatic](https://github.com/nystudio107/craft-seomatic) component
+
 ## Installation
 
-`yarn`
+- To setup the frontend tooling and nextjs run `yarn install` or `npm install`
+- To install CraftCMS please refer to the [CraftCMS Docs](https://craftcms.com/docs/3.x/installation.html)
 
-## Commands
+### Commands
 
 - `yarn dev` : starts the next js web server
+- `yarn build` : build the next js app
+- `yarn start` : start the production site
+- `yarn lint` : lint the frontend code
 - `yarn storybook` : starts the storybook server
 - `yarn release` : tag a release, update changelog
 
-## Code scaffold
+### Code scaffold
 
 - `yarn new:component` : create a new component
 - `yarn new:page` : create a new nextjs page
