@@ -6,6 +6,9 @@ scope:
   - 'elements.inactive:read'
   - 'sections.a82e5b64-a1ec-4303-a3f4-56a53ed71bcd:read' # Blog
   - 'entrytypes.67a1ce4b-345c-456a-a074-b260f85c0274:read' # Blog
+  - 'sections.9d03ff81-21ae-4053-89d0-3042a70e9c40:read' # Pages
+  - 'entrytypes.d4bc4e24-90b7-4fd5-8026-144624f854f2:read' # Pages
+  - 'entrytypes.86f7cf72-1dfc-4d73-88e1-dd936dcd4dc7:read' # Landing Pages
   - 'volumes.48b97265-8699-4399-a4a9-f63748b29a9b:read' # Images
   - 'volumes.4febe1c1-57e8-4eaf-b476-8e2b265a0e23:read' # Documents
   - 'volumes.218e4a7c-9717-4815-9100-92a99bc98205:read' # Video

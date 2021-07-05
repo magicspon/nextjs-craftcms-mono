@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: pages
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{{ getenv(''PREVIEW_URL'') }}/api/preview?secret={{ getenv(''CMS_PREVIEW_TOKEN'') }}&entryUid={sourceUid}&siteId={siteId}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  8d504ef3-ab37-4e5b-99ba-01d8bf2290db: # NextJs Craft Starter
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 9236ce6c-7798-495e-8ae5-a362b10c5c1a
+type: structure

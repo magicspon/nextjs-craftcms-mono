@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.2.0...@spon/cms@0.3.0) (2021-07-05)
+
+
+### Features
+
+* add pages with multiple types ([72ceeff](https://github.com/magicspon/nextjs-craftcms-mono/commit/72ceeff8df655b1db6311796cd8c188c4968efdd))
+
+
+
 ## [0.2.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.1.0...@spon/cms@0.2.0) (2021-07-05)
 
 
