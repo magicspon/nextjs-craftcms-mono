@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.5.0...@spon/frontend@0.6.0) (2021-07-05)
+
+
+### Features
+
+* **frontend:** add seo component ([9898017](https://github.com/magicspon/nextjs-craftcms-mono/commit/9898017d19228464784b39e8c73f79d320a009df))
+
+
+
 ## [0.5.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.4.0...@spon/frontend@0.5.0) (2021-07-05)
 
 

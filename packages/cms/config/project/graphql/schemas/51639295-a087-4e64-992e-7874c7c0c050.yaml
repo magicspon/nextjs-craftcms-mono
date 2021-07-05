@@ -6,6 +6,8 @@ scope:
   - 'elements.inactive:read'
   - 'sections.a82e5b64-a1ec-4303-a3f4-56a53ed71bcd:read' # Blog
   - 'entrytypes.67a1ce4b-345c-456a-a074-b260f85c0274:read' # Blog
+  - 'sections.4b7b7a3a-8a5a-48cf-b4cd-d6558753d966:read' # Home
+  - 'entrytypes.c8141cf8-689a-40b0-9159-3ea2faace57d:read' # Home
   - 'sections.9d03ff81-21ae-4053-89d0-3042a70e9c40:read' # Pages
   - 'entrytypes.d4bc4e24-90b7-4fd5-8026-144624f854f2:read' # Pages
   - 'entrytypes.86f7cf72-1dfc-4d73-88e1-dd936dcd4dc7:read' # Landing Pages
