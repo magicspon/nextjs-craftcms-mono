@@ -18,14 +18,12 @@
 	"scripts": {
 		"dev": "lerna run dev --scope=@spon/frontend --stream",
 		"storybook": "cd packages/frontend && yarn storybook",
-		"build": "lerna run --parallel build",
-		"app:build": "lerna run --scope=@spon/frontend build",
-		"app:start": "lerna run --scope=@spon/frontend start",
+		"build": "lerna run --scope=@spon/frontend build",
+		"start": "lerna run --scope=@spon/frontend start",
 		"lint": "lerna run --scope=@spon/frontend lint",
-		"pretify": "prettier --write .",
+		"pretify": "lerna run --scope=@spon/frontend prettier",
 		"prepare": "husky install",
 		"release": "lerna version --conventional-commits",
-		"hygen": "hygen",
 		"new:component": "hygen component with-prompt",
 		"new:page": "hygen page with-prompt",
 		"new:context": "hygen context with-prompt"
