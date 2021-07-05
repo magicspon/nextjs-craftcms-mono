@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.3.0...@spon/frontend@0.4.0) (2021-07-05)
+
+
+### Features
+
+* **frontend:** add pagination/entry creation ([88292a4](https://github.com/magicspon/nextjs-craftcms-mono/commit/88292a40336a5e59bd472e200338e851b30d4d47))
+
+
+### Bug Fixes
+
+* gitingore ([a919f39](https://github.com/magicspon/nextjs-craftcms-mono/commit/a919f3975abb03bc7c45a594aee59db386af118d))
+
+
+
 ## [0.3.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.2.0...@spon/frontend@0.3.0) (2021-07-04)
 
 
