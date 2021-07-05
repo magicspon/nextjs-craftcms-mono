@@ -10,6 +10,7 @@ import {
 import getPreviewToken from '@utils/getPreviewToken'
 import getEntryType from '@utils/getEntryType'
 import writeDataToDisk from '@utils/writeDataToDisk'
+import parseSEO from '@utils/parseSEO'
 
 export interface IBlogPostProps {
 	type: 'post' | 'pagination'
@@ -56,8 +57,6 @@ export const getStaticProps: GetStaticProps = async ({
 	const slug = params.slug as string
 	const uri = `blog/${slug}`
 
-	console.log('[slug]', params)
-
 	const pageNo = Number(slug)
 	// if it's a number, then it's a pagination page
 	const isPaginationPage = !Number.isNaN(pageNo)
@@ -84,16 +83,18 @@ export const getStaticProps: GetStaticProps = async ({
 	// if it's preview mode, use the typeHandle passed from the preview api
 	// if we're building/dev mode, find the typeHandle from the data written to file
 	const entryType = preview ? typeHandle : await getEntryType('blog.data', uri)
-
 	const { entry } = await client.request(BlogEntryQuery, {
 		uri,
 		seo: uri,
 	})
 
+	const { seo, ...pageProps } = entry
+
 	return {
 		props: {
+			seo: parseSEO(seo),
 			type: 'post',
-			entry,
+			...pageProps,
 			typeHandle: entryType || null,
 		},
 	}

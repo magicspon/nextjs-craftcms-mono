@@ -1,20 +1,40 @@
 import * as React from 'react'
-import Box from '@components/ui/Box'
+import { GetStaticProps } from 'next'
+import cmsClient from '@lib/cmsClient'
+import getPreviewToken from '@utils/getPreviewToken'
+import { HomeEntryQuery } from '@gql/home.gql'
+import parseSEO from '@utils/parseSEO'
 
-function IndexPage(): JSX.Element {
-	return (
-		<Box>
-			<p>
-				The following Button resolved using built-in Next.js{' '}
-				<a href="https://nextjs.org/docs/advanced-features/module-path-aliases">
-					Absolute Imports
-				</a>{' '}
-				feature:
-			</p>
-
-			<p>The following Button resolved using custom alias configuration:</p>
-		</Box>
-	)
+export interface IPageProps {
+	[k: string]: any
 }
 
-export default IndexPage
+function Index(props: IPageProps): JSX.Element {
+	return <pre>{JSON.stringify(props, null, 2)}</pre>
+}
+
+export default Index
+
+export const getStaticProps: GetStaticProps = async ({
+	preview,
+	previewData,
+}) => {
+	const { token } = getPreviewToken(
+		preview,
+		previewData as {
+			token: string
+			typeHandle: string
+		},
+	)
+
+	const client = cmsClient(token)
+	const { entry } = await client.request(HomeEntryQuery)
+	const { seo, ...pageProps } = entry
+
+	return {
+		props: {
+			seo: parseSEO(seo),
+			...pageProps,
+		},
+	}
+}

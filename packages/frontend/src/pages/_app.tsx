@@ -1,14 +1,18 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 import '@styles/index.css'
+import Seo from '@components/cms/Seo'
 
 export default function AppRoot({
 	Component,
 	pageProps,
 }: AppProps): JSX.Element {
+	const { seo, ...props } = pageProps
+
 	return (
 		<>
-			<Component {...pageProps} />
+			<Seo {...seo} />
+			<Component {...props} />
 		</>
 	)
 }

@@ -5,6 +5,7 @@ import getPreviewToken from '@utils/getPreviewToken'
 import getEntryType from '@utils/getEntryType'
 import writeDataToDisk from '@utils/writeDataToDisk'
 import { PagePathQuery, pageQueries } from '@gql/page.gql'
+import parseSEO from '@utils/parseSEO'
 
 export interface IPageProps {
 	type: 'post' | 'pagination'
@@ -40,22 +41,21 @@ export const getStaticProps: GetStaticProps = async ({
 	const page = params.page as string[]
 	const uri = page.join('/')
 
-	const entryType = preview ? typeHandle : await getEntryType('pages.data', uri)
 	// if it's preview mode, use the typeHandle passed from the preview api
 	// if we're building/dev mode, find the typeHandle from the data written to file
-
+	const entryType = preview ? typeHandle : await getEntryType('pages.data', uri)
 	const type = entryType || 'pages'
-
 	const query = pageQueries[type as 'pages' | 'landingPages']
-
 	const { entry } = await client.request(query, {
 		uri,
 		seo: uri,
 	})
+	const { seo, ...pageProps } = entry
 
 	return {
 		props: {
-			entry,
+			seo: parseSEO(seo),
+			...pageProps,
 			entryType,
 		},
 	}
