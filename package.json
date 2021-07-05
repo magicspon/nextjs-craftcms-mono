@@ -44,9 +44,13 @@
 		"babel-plugin-module-resolver": "4.1.0",
 		"commitlint": "^12.1.4",
 		"eslint": "^7.30.0",
+		"eslint-config-airbnb-typescript": "^12.3.1",
 		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-lerna": "^2.0.0",
 		"eslint-plugin-compat": "^3.9.0",
+		"eslint-plugin-import": "^2.23.4",
 		"eslint-plugin-jest": "^24.3.6",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
 		"eslint-plugin-react": "^7.24.0",
 		"eslint-plugin-react-hooks": "^4.1.2",
 		"husky": "^7.0.0",
@@ -80,10 +84,10 @@
 		}
 	},
 	"lint-staged": {
-		"*.{ts,tsx,json,js,jsx}": [
-			"eslint --cache --fix"
+		"*.{ts,tsx,js,jsx}": [
+			"yarn workspace @spon/frontend run lint"
 		],
-		"**/*.{ts,tsx,json,js,jsx,css}": [
+		"**/*.{ts,tsx,json,js,css}": [
 			"prettier --write"
 		],
 		"*.css": "stylelint --fix",
