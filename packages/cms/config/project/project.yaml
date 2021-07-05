@@ -1,4 +1,4 @@
-dateModified: 1625434810
+dateModified: 1625444365
 email:
   fromEmail: hello@spon.io
   fromName: 'NextJs Craft Starter'
@@ -42,6 +42,7 @@ system:
   edition: pro
   live: true
   name: 'NextJs Craft Starter'
+  retryDuration: null
   schemaVersion: 3.6.8
   timeZone: America/Los_Angeles
 users:

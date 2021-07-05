@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: blog
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{{ getenv(''PREVIEW_URL'') }}/api/preview?token={{ getenv(''CMS_PREVIEW_TOKEN'') }}&entryUid={sourceUid}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  8d504ef3-ab37-4e5b-99ba-01d8bf2290db: # NextJs Craft Starter
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'blog/{slug}'
+type: channel
