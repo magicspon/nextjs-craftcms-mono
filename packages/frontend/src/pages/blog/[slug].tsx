@@ -1,6 +1,4 @@
 import * as React from 'react'
-import { promises as fs } from 'fs'
-import path from 'path'
 import * as R from 'ramda'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import cmsClient from '@lib/cmsClient'
@@ -11,6 +9,7 @@ import {
 } from '@gql/blog.gql'
 import getPreviewToken from '@utils/getPreviewToken'
 import getEntryType from '@utils/getEntryType'
+import writeDataToDisk from '@utils/writeDataToDisk'
 
 export interface IBlogPostProps {
 	type: 'post' | 'pagination'
@@ -55,6 +54,9 @@ export const getStaticProps: GetStaticProps = async ({
 	)
 	const client = cmsClient(token)
 	const slug = params.slug as string
+	const uri = `blog/${slug}`
+
+	console.log('[slug]', params)
 
 	const pageNo = Number(slug)
 	// if it's a number, then it's a pagination page
@@ -81,8 +83,7 @@ export const getStaticProps: GetStaticProps = async ({
 
 	// if it's preview mode, use the typeHandle passed from the preview api
 	// if we're building/dev mode, find the typeHandle from the data written to file
-	const entryType = preview ? typeHandle : await getEntryType('blog.data', slug)
-	const uri = `blog/${params.slug}`
+	const entryType = preview ? typeHandle : await getEntryType('blog.data', uri)
 
 	const { entry } = await client.request(BlogEntryQuery, {
 		uri,
@@ -103,12 +104,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	const { entries }: TResponse = await client.request(BlogPathQuery)
 	const paths = entries.map((entry) => ({ params: { slug: entry.slug } }))
 
-	const dataDirectory = path.join(process.cwd(), 'src/data')
-
-	await fs.writeFile(
-		`${dataDirectory}/blog.data.json`,
-		JSON.stringify(entries),
-		'utf8',
+	await writeDataToDisk(
+		JSON.stringify(
+			entries.map(({ slug, ...entry }) => ({
+				...entry,
+				uri: `blog/${slug}`,
+			})),
+		),
+		'blog.data',
 	)
 
 	const pages = R.splitEvery(PER_PAGE, paths)

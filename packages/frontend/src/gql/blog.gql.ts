@@ -34,7 +34,7 @@ export const BlogPaginationQuery = gql`
 	query BlogPaginationQuery($limit: Int, $offset: Int) {
 		entries(section: "blog", limit: $limit, offset: $offset) {
 			... on blog_blog_Entry {
-				slug
+				uri
 			}
 		}
 		count: entryCount(section: "blog")

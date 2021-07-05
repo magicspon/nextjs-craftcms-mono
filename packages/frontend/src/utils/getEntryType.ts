@@ -1,14 +1,13 @@
-import { promises as fs } from 'fs'
-import { join } from 'path'
+import readDataFromDisk from '@utils/readDataFromDisk'
 
 type Entry = {
-	slug: string
+	uri: string
 	typeHandle: string
 }
 
-function getEntryTypeFromList(entryList: Entry[], slug: string): Entry | null {
+function getEntryTypeFromList(entryList: Entry[], uri: string): Entry | null {
 	if (entryList?.length) {
-		return entryList.find((entry) => entry.slug === slug) || null
+		return entryList.find((entry) => entry.uri === uri) || null
 	}
 
 	return null
@@ -16,13 +15,10 @@ function getEntryTypeFromList(entryList: Entry[], slug: string): Entry | null {
 
 export default async function getEntryType(
 	path: string,
-	slug: string,
+	uri: string,
 ): Promise<string | null> {
-	const entryList = await fs.readFile(
-		`${join(process.cwd(), 'src/data')}/${path}.json`,
-		'utf8',
-	)
-	const entryListItem = getEntryTypeFromList(JSON.parse(entryList), slug)
+	const entryList = await readDataFromDisk(path)
+	const entryListItem = getEntryTypeFromList(JSON.parse(entryList), uri)
 
 	return entryListItem?.typeHandle || null
 }

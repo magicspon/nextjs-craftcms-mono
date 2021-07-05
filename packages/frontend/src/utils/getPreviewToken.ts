@@ -12,11 +12,11 @@ export default function getPreviewToken(
 	preview?: boolean,
 	previewData?: IPreviewDataProps,
 ): IPreviewData {
-	const p = previewData as IPreviewDataProps
-	const previewToken = preview && previewData ? p.token : null
+	const p = previewData
+	const previewToken = preview && previewData ? p?.token || null : null
 
 	return {
 		token: previewToken,
-		typeHandle: p?.typeHandle,
+		typeHandle: p?.typeHandle || null,
 	}
 }
