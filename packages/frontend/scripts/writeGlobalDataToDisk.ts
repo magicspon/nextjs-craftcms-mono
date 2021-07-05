@@ -1,10 +1,18 @@
 import path from 'path'
-import { promises as fs } from 'fs'
+import dotenv from 'dotenv'
+import { GlobalDataQuery } from '../src/gql/global.gql'
+import cmsClient from '../src/lib/cmsClient'
+import writeDataToDisk from '../src/utils/writeDataToDisk'
 
-async function Something(): Promise<void> {
-	const output = path.join(process.cwd(), 'src/data/test.data.json')
+const envFile = path.resolve(process.cwd(), '.env.local')
 
-	await fs.writeFile(output, JSON.stringify({ hello: 'world' }), 'utf8')
+dotenv.config({ path: envFile })
+
+async function main(): Promise<void> {
+	const client = cmsClient()
+	const data = await client.request(GlobalDataQuery)
+
+	await writeDataToDisk(JSON.stringify(data), 'global.data')
 }
 
-Something()
+main()

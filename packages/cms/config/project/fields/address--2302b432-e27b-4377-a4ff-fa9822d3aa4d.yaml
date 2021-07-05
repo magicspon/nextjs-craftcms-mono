@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: b53d0c39-a184-4985-b116-b53612066f9f # Contact
+handle: address
+instructions: ''
+name: Address
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

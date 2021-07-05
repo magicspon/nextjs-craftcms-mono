@@ -15,6 +15,7 @@ module.exports = {
 	},
 
 	webpack: (config, options) => {
+		// eslint-disable-next-line no-param-reassign
 		config.module = {
 			...config.module,
 			rules: [

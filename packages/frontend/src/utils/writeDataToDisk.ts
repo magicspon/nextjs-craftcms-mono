@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs'
-import { dataDirectory } from '@utils/constants'
+import { dataDirectory } from './constants'
 
 export default async function writeDataToDisk(
 	data: string,

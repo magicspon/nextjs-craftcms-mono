@@ -10,10 +10,12 @@ export default async (
 	const { token } = req.query
 
 	if (!token) {
-		return res.status(401).json({ message: 'Token missing' })
+		res.status(401).json({ message: 'Token missing' })
+		return
 	}
 	if (!req.query.entryUid) {
-		return res.status(401).json({ message: 'Not allowed to access this route' })
+		res.status(401).json({ message: 'Not allowed to access this route' })
+		return
 	}
 
 	const secret = Array.isArray(token) ? R.last(token) : token
@@ -21,7 +23,7 @@ export default async (
 	const client = cmsClient(secret)
 
 	const pageQuery = gql`
-		query($uid: [String]) {
+		query ($uid: [String]) {
 			entry(uid: $uid, status: null) {
 				id
 				uri
@@ -34,12 +36,11 @@ export default async (
 		uid: req.query.entryUid,
 	})
 
-	console.log('[data]', data)
-
 	if (!data?.entry?.uri) {
-		return res.status(404).json({
+		res.status(404).json({
 			message: `URL of the entry ${req.query.entryUid} could not be fetched`,
 		})
+		return
 	}
 
 	res.setPreviewData({
