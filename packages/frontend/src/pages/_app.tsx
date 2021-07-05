@@ -17,11 +17,3 @@ export default function AppRoot({
 		</>
 	)
 }
-
-const a = 10
-
-const b = {
-	a,
-}
-
-const anus = wayne() * 10
