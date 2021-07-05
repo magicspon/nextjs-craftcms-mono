@@ -38,8 +38,3 @@ export const getStaticProps: GetStaticProps = async ({
 		},
 	}
 }
-
-// const b = {
-// 	a,
-// 	wayne: wayne(),
-// }
