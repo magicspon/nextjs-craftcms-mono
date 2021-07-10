@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.6.1...@spon/frontend@0.7.0) (2021-07-10)
+
+
+### Features
+
+* formie integration ([6dbbd89](https://github.com/magicspon/nextjs-craftcms-mono/commit/6dbbd8932e175c00530e7b3e3c4509e253d0e328))
+
+
+
 ### [0.6.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/frontend@0.6.0...@spon/frontend@0.6.1) (2021-07-05)
 
 
