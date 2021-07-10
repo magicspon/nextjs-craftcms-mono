@@ -14,13 +14,13 @@ function Seo({ title, meta, links, jsonLd }: ISeoProps): JSX.Element {
 	return (
 		<Head>
 			<title>{title}</title>
-			{meta.map((item) => (
+			{meta?.map((item) => (
 				<meta key={item.content} {...item} />
 			))}
-			{links.map((item) => (
+			{links?.map((item) => (
 				<link key={item.href} {...item} />
 			))}
-			{jsonLd.map((item) => (
+			{jsonLd?.map((item) => (
 				<script key={item['@context']} type="application/ld+json">
 					{JSON.stringify(item)}
 				</script>
