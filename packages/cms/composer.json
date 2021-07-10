@@ -3,7 +3,7 @@
 		"craftcms/cms": "^3.6.4",
 		"craftcms/redactor": "^2.8",
 		"craftcms/webhooks": "^2.3",
-		"nystudio107/craft-seomatic": "^3.3",
+		"nystudio107/craft-seomatic": "3.3.44",
 		"sebastianlenz/linkfield": "2.0.0-beta.12",
 		"spicyweb/craft-embedded-assets": "^2.7",
 		"studioespresso/craft-splashingimages": "^2.1",

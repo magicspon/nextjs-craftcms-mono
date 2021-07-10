@@ -17,7 +17,7 @@
 			"@lib/*": ["src/lib/*"],
 			"@styles/*": ["src/styles/*"],
 			"@svgs/*": ["src/svgs/*"],
-			"@types/*": ["src/types/*"],
+			"@defs/*": ["src/types/*"],
 			"@utils/*": ["src/utils/*"]
 		}
 	},

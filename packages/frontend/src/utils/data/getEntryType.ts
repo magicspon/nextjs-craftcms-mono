@@ -1,4 +1,4 @@
-import readDataFromDisk from '@utils/readDataFromDisk'
+import readDataFromDisk from '@utils/data/readDataFromDisk'
 
 type Entry = {
 	uri: string

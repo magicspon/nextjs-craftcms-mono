@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import cmsClient from '@lib/cmsClient'
-import getPreviewToken from '@utils/getPreviewToken'
-import getEntryType from '@utils/getEntryType'
-import writeDataToDisk from '@utils/writeDataToDisk'
+import getPreviewToken from '@utils/data/getPreviewToken'
+import getEntryType from '@utils/data/getEntryType'
+import writeDataToDisk from '@utils/data/writeDataToDisk'
 import { PagePathQuery, pageQueries } from '@gql/page.gql'
-import parseSEO from '@utils/parseSEO'
+import parseSEO from '@utils/data/parseSEO'
 
 export interface IPageProps {
 	type: 'post' | 'pagination'

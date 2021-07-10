@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { GetStaticProps } from 'next'
 import cmsClient from '@lib/cmsClient'
-import getPreviewToken from '@utils/getPreviewToken'
+import getPreviewToken from '@utils/data/getPreviewToken'
 import { HomeEntryQuery } from '@gql/home.gql'
-import parseSEO from '@utils/parseSEO'
+import parseSEO from '@utils/data/parseSEO'
 
 export interface IPageProps {
 	[k: string]: any

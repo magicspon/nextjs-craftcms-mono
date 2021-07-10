@@ -7,10 +7,10 @@ import {
 	BlogEntryQuery,
 	BlogPaginationQuery,
 } from '@gql/blog.gql'
-import getPreviewToken from '@utils/getPreviewToken'
-import getEntryType from '@utils/getEntryType'
-import writeDataToDisk from '@utils/writeDataToDisk'
-import parseSEO from '@utils/parseSEO'
+import getPreviewToken from '@utils/data/getPreviewToken'
+import getEntryType from '@utils/data/getEntryType'
+import writeDataToDisk from '@utils/data/writeDataToDisk'
+import parseSEO from '@utils/data/parseSEO'
 
 export interface IBlogPostProps {
 	type: 'post' | 'pagination'
