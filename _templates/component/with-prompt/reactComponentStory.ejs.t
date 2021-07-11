@@ -1,10 +1,9 @@
 ---
 to: packages/<%= package %>/src/components/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCase.pascalCase(name) %>.stories.tsx
 ---
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
-import <%= h.changeCase.pascalCase(name) %> from '.';
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import <%= h.changeCase.pascalCase(name) %> from '.'
 
 export default {
   title: 'Example/<%= h.changeCase.pascalCase(name) %>',
@@ -12,11 +11,11 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof <%= h.changeCase.pascalCase(name) %>>;
+} as ComponentMeta<typeof <%= h.changeCase.pascalCase(name) %>>
 
-const Template: ComponentStory<typeof <%= h.changeCase.pascalCase(name) %>> = (args) => <<%= h.changeCase.pascalCase(name) %> {...args} />;
+const Template: ComponentStory<typeof <%= h.changeCase.pascalCase(name) %>> = (args) => <<%= h.changeCase.pascalCase(name) %> {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   children: 'hello world'
-};
+}

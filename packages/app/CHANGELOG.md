@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.8.2](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.8.1...@spon/app@0.8.2) (2021-07-11)
+
+
+### Bug Fixes
+
+* **ui:** support next/image and next/link in stories ([4297d45](https://github.com/magicspon/nextjs-craftcms-mono/commit/4297d45fc7f47ef71eadc916755c435f5407d660))
+
+
+
+### [0.8.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.8.0...@spon/app@0.8.1) (2021-07-11)
+
+**Note:** Version bump only for package @spon/app
+
+
+
+
+
 ## [0.8.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.7.1...@spon/app@0.8.0) (2021-07-11)
 
 

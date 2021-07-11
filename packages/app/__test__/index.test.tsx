@@ -6,7 +6,6 @@ describe('Index page', () => {
 	it('should render elements properly', () => {
 		render(<Index />)
 
-		expect(screen.getByText('Custom internal button')).toBeInTheDocument()
-		expect(screen.getByText('Button from ui')).toBeInTheDocument()
+		expect(screen.getByText('Home page')).toBeInTheDocument()
 	})
 })

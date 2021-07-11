@@ -1,17 +1,17 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import Box from '.'
+import Select from '.'
 
 export default {
-	title: 'Example/Box',
-	component: Box,
+	title: 'form/Select',
+	component: Select,
 	argTypes: {
 		backgroundColor: { control: 'color' },
 	},
-} as ComponentMeta<typeof Box>
+} as ComponentMeta<typeof Select>
 
-const Template: ComponentStory<typeof Box> = (args) => <Box {...args} />
+const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {

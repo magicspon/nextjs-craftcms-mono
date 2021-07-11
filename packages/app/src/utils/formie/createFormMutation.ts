@@ -1,7 +1,7 @@
 import * as R from 'ramda'
 import type * as T from '@defs/formie'
 
-function getFormKeys(input: T.IForm): T.IFormKeys[] {
+function getFormFieldMeta(input: T.IForm): T.IFormKeys[] {
 	const { pages } = input
 
 	const rows = R.pipe<T.IPage[], T.IRow[][], T.IField[][], T.IFormKeys[]>(
@@ -36,26 +36,29 @@ function getInputType({ type, handle, formHandle }: IGetInputTypes): string {
 	)
 }
 
+const join = R.join(', ')
+
 function createMutationTypes(input: T.IForm): string {
-	const keys = getFormKeys(input)
-	return keys
-		.map(
+	return R.pipe(
+		getFormFieldMeta,
+		R.map(
 			({ handle, type }) =>
 				`$${handle}: ${getInputType({
 					type,
 					handle,
 					formHandle: input.handle,
 				})}`,
-		)
-		.join(', ')
+		),
+		join,
+	)(input)
 }
 
 function createMutationValues(input: T.IForm): string {
 	const keys = R.pipe(
-		getFormKeys,
+		getFormFieldMeta,
 		R.pluck('handle'),
 		R.map((key) => `${key}: $${key}`),
-		R.join(', '),
+		join,
 	)(input)
 
 	return keys
@@ -66,7 +69,7 @@ export default function createMutation(form: T.IForm): string {
 	const mutationHandle = createMutationHandle(form)
 	const mutationValues = createMutationValues(form)
 
-	return /* graphql */ `
+	return `
 		mutation FormMutation(${mutationTypes}) {
 			${mutationHandle}(${mutationValues}) {
 				id
