@@ -4,13 +4,20 @@ import cmsClient from '@lib/cmsClient'
 import getPreviewToken from '@utils/data/getPreviewToken'
 import { HomeEntryQuery } from '@gql/home.gql'
 import parseSEO from '@utils/data/parseSEO'
+import Box from '@ui/components/Box'
 
 export interface IPageProps {
 	[k: string]: any
 }
 
 function Index(props: IPageProps): JSX.Element {
-	return <pre>{JSON.stringify(props, null, 2)}</pre>
+	return (
+		<div className="flex text-red-500 bg-spam">
+			<Box>
+				<pre>{JSON.stringify(props, null, 2)}</pre>
+			</Box>
+		</div>
+	)
 }
 
 export default Index

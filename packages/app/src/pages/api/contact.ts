@@ -10,9 +10,7 @@ export default async function handler(
 			const client = cmsClient()
 			const { mutation, body } = JSON.parse(req.body)
 
-			const response = await client.request(mutation, body)
-
-			console.log('[response]', response)
+			await client.request(mutation, body)
 
 			return res.status(200).json({ success: true })
 		} catch (err) {

@@ -27,7 +27,11 @@ module.exports = {
 	},
 
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				spam: '#4ae',
+			},
+		},
 	},
 
 	plugins: [],

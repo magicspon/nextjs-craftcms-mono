@@ -5,7 +5,7 @@ const rules = {
 }
 
 module.exports = {
-	// ignorePatterns: ['.eslintrc.js'],
+	ignorePatterns: ['*/*/.storybook/*'],
 	parser: '@typescript-eslint/parser',
 	plugins: ['react-hooks', '@typescript-eslint'],
 	parserOptions: {
