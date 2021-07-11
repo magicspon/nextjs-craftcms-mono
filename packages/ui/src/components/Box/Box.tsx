@@ -1,12 +1,11 @@
 import * as React from 'react'
-import Tit from '@ui/components/Tit'
 
 export interface IBoxProps {
 	children: React.ReactNode
 }
 
 function Box({ children }: IBoxProps): JSX.Element {
-	return <Tit>{children}</Tit>
+	return <div className="bg-red-50">{children}</div>
 }
 
 export default Box
