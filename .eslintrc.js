@@ -38,6 +38,7 @@ module.exports = {
 		'react-hooks/exhaustive-deps': rules.WARN,
 		'prefer-spread': rules.WARN,
 		'react/jsx-props-no-spreading': rules.OFF,
+		'jsx-a11y/anchor-is-valid': rules.OFF,
 		'import/no-extraneous-dependencies': rules.OFF,
 		'import/prefer-default-export': rules.OFF,
 	},

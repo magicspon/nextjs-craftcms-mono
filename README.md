@@ -7,9 +7,10 @@
 - Storybook
 - Typescript
 - CraftCMS
+- @svgr/webpack
 - Hygen generator
 - Lerna
-- @svgr/webpack
+- Husky
 - eslint
 - prettier
 - stylelint

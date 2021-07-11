@@ -16,4 +16,5 @@ const Template: ComponentStory<typeof Box> = (args) => <Box {...args} />
 export const Primary = Template.bind({})
 Primary.args = {
 	children: 'hello world',
+	src: 'https://nextcraft.test/assets/images/album-cover.jpeg',
 }
