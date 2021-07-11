@@ -1,6 +1,6 @@
 {
 	"name": "@spon/app",
-	"version": "0.7.1",
+	"version": "0.8.0",
 	"scripts": {
 		"prewrite:data": "tsc scripts/writeGlobalDataToDisk.ts --outDir scripts/dist --types node --module commonjs --target ES2017 --esModuleInterop",
 		"write:data": "node ./scripts/dist/scripts/writeGlobalDataToDisk.js",
@@ -18,8 +18,8 @@
 		"build-storybook": "build-storybook"
 	},
 	"dependencies": {
-		"@spon/shared": "*",
-		"@spon/ui": "^0.0.1",
+		"@spon/shared": "^0.1.0",
+		"@spon/ui": "^0.1.0",
 		"cross-env": "7.0.3",
 		"graphql": "^15.5.1",
 		"graphql-request": "^3.4.0",

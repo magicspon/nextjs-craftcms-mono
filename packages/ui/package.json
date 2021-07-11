@@ -1,6 +1,6 @@
 {
 	"name": "@spon/ui",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"scripts": {
 		"lint": "eslint src",
 		"lint-css": "stylelint ./**/*.css --quiet --fix",
@@ -12,7 +12,7 @@
 		"build": "build-storybook"
 	},
 	"dependencies": {
-		"@spon/shared": "*",
+		"@spon/shared": "^0.1.0",
 		"cross-env": "7.0.3",
 		"graphql": "^15.5.1",
 		"graphql-request": "^3.4.0",
