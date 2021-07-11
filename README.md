@@ -11,6 +11,7 @@
 - Hygen generator
 - Lerna
 - Husky
+- Jest
 - eslint
 - prettier
 - stylelint
@@ -34,6 +35,7 @@
 ### Commands
 
 - `yarn dev` : starts the app package nextjs server
+- `yarn test` : run all of the tests
 - `yarn build` : build the next js app
 - `yarn start` : start the production site
 - `yarn lint` : lint the frontend code

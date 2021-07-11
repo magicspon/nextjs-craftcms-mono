@@ -12,6 +12,7 @@ export interface IPageProps {
 function Index(props: IPageProps): JSX.Element {
 	return (
 		<div className="flex text-red-500 bg-spam">
+			<p>Home page</p>
 			<pre>{JSON.stringify(props, null, 2)}</pre>
 		</div>
 	)

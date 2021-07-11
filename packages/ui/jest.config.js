@@ -1,14 +1,15 @@
+const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { compilerOptions } = require('./tsconfig.json')
+const jestConfig = require('../jest.config')
+
 module.exports = {
-	collectCoverageFrom: [
-		'**/*.{js,jsx,ts,tsx}',
-		'!**/*.d.ts',
-		'!**/node_modules/**',
-	],
-	setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-	testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-	transform: {
-		'^.+\\.[tj]sx?$': 'babel-jest',
+	...jestConfig,
+	rootDir: './',
+	moduleNameMapper: {
+		'\\.(css)$': 'identity-obj-proxy',
+		'^.+\\.svg$': '<rootDir>/__mocks__/svgrMock.js',
+		...pathsToModuleNameMapper(compilerOptions.paths, {
+			prefix: '<rootDir>/',
+		}),
 	},
-	transformIgnorePatterns: ['/node_modules/'],
 }
