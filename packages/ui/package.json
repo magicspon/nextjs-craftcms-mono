@@ -12,7 +12,7 @@
 		"build": "build-storybook"
 	},
 	"dependencies": {
-		"@spon/app": "^0.7.1",
+		"@spon/shared": "*",
 		"cross-env": "7.0.3",
 		"graphql": "^15.5.1",
 		"graphql-request": "^3.4.0",

@@ -32,11 +32,11 @@
 
 ### Commands
 
-- `yarn dev` : starts the next js web server
+- `yarn dev` : starts the app package nextjs server
 - `yarn build` : build the next js app
 - `yarn start` : start the production site
 - `yarn lint` : lint the frontend code
-- `yarn storybook` : starts the storybook server
+- `yarn storybook` : runs the ui package storybook server
 - `yarn release` : tag a release, update changelog
 
 ### Code scaffold
