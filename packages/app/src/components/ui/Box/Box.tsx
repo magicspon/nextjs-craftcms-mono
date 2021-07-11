@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Icon from '@svgs/delete.svg'
+import Box from '@ui/components/Box'
+import DeleteIcon from '@svgs/delete.svg'
 
 export interface IBoxProps {
 	children: React.ReactNode
@@ -7,8 +8,8 @@ export interface IBoxProps {
 
 export default function IBox({ children }: IBoxProps): JSX.Element {
 	return (
-		<div className="text-white bg-blue-500">
-			{children} <Icon />
-		</div>
+		<Box>
+			{children} <DeleteIcon />
+		</Box>
 	)
 }

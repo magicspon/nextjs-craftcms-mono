@@ -48,4 +48,5 @@
 ### Packages
 
 - `/packages/cms` : Craft CMS
-- `/packages/frontend` : Next JS codebase
+- `/packages/app` : Next JS codebase
+- `/packages/ui` : Design system

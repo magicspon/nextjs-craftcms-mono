@@ -1,8 +1,6 @@
 {
 	"extends": "../../tsconfig",
-
 	"compilerOptions": {
-		"composite": true,
 		"baseUrl": ".",
 		"module": "esnext",
 		"noEmit": false,
@@ -10,6 +8,8 @@
 		"target": "es2017",
 		"isolatedModules": true,
 		"paths": {
+			"@ui": ["../ui/src"],
+			"@ui/*": ["../ui/src/*"],
 			"@components/*": ["src/components/*"],
 			"@containers/*": ["src/containers/*"],
 			"@gql/*": ["src/gql/*"],
@@ -21,6 +21,6 @@
 			"@utils/*": ["src/utils/*"]
 		}
 	},
-	"exclude": ["dist", ".next", "out", "next.config.ts"],
-	"include": ["next-env.d.ts", "src", "src/**/*.json"]
+	"exclude": ["dist", ".next", "out", "next.config.js"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

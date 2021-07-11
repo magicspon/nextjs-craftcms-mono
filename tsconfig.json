@@ -24,7 +24,13 @@
 		"preserveConstEnums": true,
 		"removeComments": false,
 		"sourceMap": true,
-		"downlevelIteration": true
+		"downlevelIteration": true,
+		"paths": {
+			"@ui": ["../ui/src"],
+			"@ui/*": ["../ui/src/*"],
+			"@app": ["../app/src"],
+			"@app/*": ["../app/src/*"]
+		}
 	},
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "packages/cms/*"]
 }

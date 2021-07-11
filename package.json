@@ -16,12 +16,12 @@
 		"packages/*"
 	],
 	"scripts": {
-		"dev": "lerna run dev --scope=@spon/frontend --stream",
-		"storybook": "cd packages/frontend && yarn storybook",
-		"build": "lerna run --scope=@spon/frontend build",
-		"start": "lerna run --scope=@spon/frontend start",
-		"lint": "lerna run --scope=@spon/frontend lint",
-		"pretify": "lerna run --scope=@spon/frontend prettier",
+		"storybook": "yarn workspace @spon/ui run dev",
+		"dev": "yarn workspace @spon/app run dev",
+		"build": "yarn workspace @spon/app run build",
+		"start": "yarn workspace @spon/app run start",
+		"lint": "yarn workspace @spon/app run lint",
+		"pretify": "yarn workspace @spon/app run prettier",
 		"prepare": "husky install",
 		"release": "lerna version --conventional-commits",
 		"new:component": "hygen component with-prompt",
@@ -83,7 +83,7 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
-			"yarn workspace @spon/frontend run lint"
+			"yarn workspace @spon/app run lint"
 		],
 		"**/*.{ts,tsx,json,js,css}": [
 			"prettier --write"
