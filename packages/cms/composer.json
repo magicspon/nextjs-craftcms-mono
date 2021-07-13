@@ -7,7 +7,7 @@
 		"sebastianlenz/linkfield": "2.0.0-beta.12",
 		"spicyweb/craft-embedded-assets": "^2.7",
 		"studioespresso/craft-splashingimages": "^2.1",
-		"verbb/formie": "^1.4",
+		"verbb/formie": "1.4.9",
 		"verbb/super-table": "^2.6",
 		"vlucas/phpdotenv": "^3.4.0"
 	},
