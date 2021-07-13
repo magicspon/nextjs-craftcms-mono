@@ -1,0 +1,26 @@
+{
+	"extends": "../../tsconfig",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "esnext",
+		"noEmit": false,
+		"outDir": "dist",
+		"target": "es2017",
+		"isolatedModules": true,
+		"paths": {
+			"@ui": ["../ui/src"],
+			"@ui/*": ["../ui/src/*"],
+			"@components/*": ["src/components/*"],
+			"@containers/*": ["src/containers/*"],
+			"@gql/*": ["src/gql/*"],
+			"@data/*": ["src/data/*"],
+			"@lib/*": ["src/lib/*"],
+			"@styles/*": ["src/styles/*"],
+			"@svgs/*": ["src/svgs/*"],
+			"@defs/*": ["src/types/*"],
+			"@utils/*": ["src/utils/*"]
+		}
+	},
+	"exclude": ["dist", ".next", "out", "next.config.js"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

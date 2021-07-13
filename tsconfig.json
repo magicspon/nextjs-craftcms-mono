@@ -26,15 +26,11 @@
 		"sourceMap": true,
 		"downlevelIteration": true,
 		"paths": {
-			"@oomph/ui": ["../ui/src"],
-			"@oomph/ui/*": ["../ui/src/*"],
-
-			"@oomph/utils": ["../utils/src"],
-			"@oomph/utils/*": ["../utils/src/*"],
-
-			"@oomph/scripts": ["../scripts"],
-			"@oomph/scripts/*": ["../scripts/*"]
+			"@ui": ["../ui/src"],
+			"@ui/*": ["../ui/src/*"],
+			"@app": ["../app/src"],
+			"@app/*": ["../app/src/*"]
 		}
 	},
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "packages/cms/*"]
 }

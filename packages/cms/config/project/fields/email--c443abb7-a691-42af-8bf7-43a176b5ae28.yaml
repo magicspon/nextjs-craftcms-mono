@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: b53d0c39-a184-4985-b116-b53612066f9f # Contact
+handle: email
+instructions: ''
+name: Email
+searchable: false
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

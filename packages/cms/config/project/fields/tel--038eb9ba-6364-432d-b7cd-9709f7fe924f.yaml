@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: b53d0c39-a184-4985-b116-b53612066f9f # Contact
+handle: tel
+instructions: ''
+name: Tel
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

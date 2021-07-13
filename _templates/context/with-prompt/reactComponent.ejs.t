@@ -19,7 +19,7 @@ export function use<%= h.changeCase.pascalCase(name)  %>Dispatch(): <%= h.change
 	return React.useContext(<%= h.changeCase.pascalCase(name)  %>UpdateContext) as <%= h.changeCase.pascalCase(name)  %>Dispatch
 }
 
-export function useLoading(): [<%= h.changeCase.pascalCase(name)  %>State, <%= h.changeCase.pascalCase(name)  %>Dispatch] {
+export function use<%= h.changeCase.pascalCase(name)  %>(): [<%= h.changeCase.pascalCase(name)  %>State, <%= h.changeCase.pascalCase(name)  %>Dispatch] {
 	return [use<%= h.changeCase.pascalCase(name)  %>State(), use<%= h.changeCase.pascalCase(name)  %>Dispatch()]
 }
 

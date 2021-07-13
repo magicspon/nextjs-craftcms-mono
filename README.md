@@ -7,25 +7,42 @@
 - Storybook
 - Typescript
 - CraftCMS
+- @svgr/webpack
 - Hygen generator
 - Lerna
-- @svgr/webpack
+- Husky
+- Jest
 - eslint
 - prettier
 - stylelint
 - commitlint
 
+## CraftCMS/Next
+
+- GraphQL api
+- Blog listing/pagination + entries
+- Home page entry
+- Pages structure (supports multiple types)
+- Global (build time) data
+- [SEOMatic](https://github.com/nystudio107/craft-seomatic) component
+- [Formie](https://github.com/verbb/formie) helpers, including auto generated graphql mutations
+
 ## Installation
 
-`yarn`
+- To setup the frontend tooling and nextjs run `yarn install` or `npm install`
+- To install CraftCMS please refer to the [CraftCMS Docs](https://craftcms.com/docs/3.x/installation.html)
 
-## Commands
+### Commands
 
-- `yarn dev` : starts the next js web server
-- `yarn storybook` : starts the storybook server
+- `yarn dev` : starts the app package nextjs server
+- `yarn test` : run all of the tests
+- `yarn build` : build the next js app
+- `yarn start` : start the production site
+- `yarn lint` : lint the frontend code
+- `yarn storybook` : runs the ui package storybook server
 - `yarn release` : tag a release, update changelog
 
-## Code scaffold
+### Code scaffold
 
 - `yarn new:component` : create a new component
 - `yarn new:page` : create a new nextjs page
@@ -34,4 +51,5 @@
 ### Packages
 
 - `/packages/cms` : Craft CMS
-- `/packages/frontend` : Next JS codebase
+- `/packages/app` : Next JS codebase
+- `/packages/ui` : Design system

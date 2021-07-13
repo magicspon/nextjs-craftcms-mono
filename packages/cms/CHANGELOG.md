@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.5.1...@spon/cms@0.6.0) (2021-07-13)
+
+
+### Features
+
+* add hook template ([9a91070](https://github.com/magicspon/nextjs-craftcms-mono/commit/9a910700a04fed543504ee00818c7abc2a49791b))
+
+
+
+### [0.5.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.5.0...@spon/cms@0.5.1) (2021-07-10)
+
+**Note:** Version bump only for package @spon/cms
+
+
+
+
+
+## [0.5.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.4.1...@spon/cms@0.5.0) (2021-07-10)
+
+
+### Features
+
+* formie integration ([6dbbd89](https://github.com/magicspon/nextjs-craftcms-mono/commit/6dbbd8932e175c00530e7b3e3c4509e253d0e328))
+
+
+
+### [0.4.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.4.0...@spon/cms@0.4.1) (2021-07-05)
+
+**Note:** Version bump only for package @spon/cms
+
+
+
+
+
 ## [0.4.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.3.0...@spon/cms@0.4.0) (2021-07-05)
 
 
