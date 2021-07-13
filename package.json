@@ -27,7 +27,8 @@
 		"release": "lerna version --conventional-commits",
 		"new:component": "hygen component with-prompt",
 		"new:page": "hygen page with-prompt",
-		"new:context": "hygen context with-prompt"
+		"new:context": "hygen context with-prompt",
+		"new:hook": "hygen hook with-prompt"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.6",
@@ -90,7 +91,8 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
-			"yarn workspace @spon/app run lint"
+			"yarn workspace @spon/app run lint",
+			"yarn workspace @spon/ui run lint"
 		],
 		"**/*.{ts,tsx,json,js,css}": [
 			"prettier --write"
