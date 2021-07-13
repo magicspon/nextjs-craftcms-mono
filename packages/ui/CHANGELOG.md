@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/ui@0.1.2...@spon/ui@0.2.0) (2021-07-13)
+
+
+### Features
+
+* add hook template ([9a91070](https://github.com/magicspon/nextjs-craftcms-mono/commit/9a910700a04fed543504ee00818c7abc2a49791b))
+
+
+
 ### [0.1.2](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/ui@0.1.1...@spon/ui@0.1.2) (2021-07-11)
 
 
