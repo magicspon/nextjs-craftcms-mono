@@ -16,7 +16,7 @@
 		"packages/*"
 	],
 	"scripts": {
-		"storybook": "yarn workspace @spon/ui run dev",
+		"storybook": "yarn workspace @spon/ui run start:storybook",
 		"test": "yarn lerna run test --stream --concurrency 1",
 		"dev": "yarn workspace @spon/app run dev",
 		"build": "yarn workspace @spon/app run build",

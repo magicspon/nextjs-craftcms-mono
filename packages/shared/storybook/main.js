@@ -17,7 +17,8 @@ module.exports = (dir, { webpackFinal = (conf) => conf, ...sbConfig } = {}) => {
 		addons: [
 			'@storybook/addon-links',
 			'@storybook/addon-essentials',
-
+			'@storybook/addon-a11y',
+			'@storybook/addon-jest',
 			{
 				name: '@storybook/addon-postcss',
 				options: {

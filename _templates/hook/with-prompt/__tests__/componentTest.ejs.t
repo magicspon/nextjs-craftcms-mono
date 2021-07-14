@@ -2,9 +2,9 @@
 to: packages/<%= package %>/src/hooks/use<%= h.changeCase.pascalCase(name) %>/__tests__/use<%= h.changeCase.pascalCase(name) %>.test.tsx
 ---
 import { renderHook, act } from '@testing-library/react-hooks'
-import use<%= h.changeCase.pascalCase(name) %>, { I<%= h.changeCase.pascalCase(name) %>Props } from '..';
+import use<%= h.changeCase.pascalCase(name) %>, { Iuse<%= h.changeCase.pascalCase(name) %>Props } from '..';
 
-const defaultProps: I<%= h.changeCase.pascalCase(name) %>Props = {
+const defaultProps: Iuse<%= h.changeCase.pascalCase(name) %>Props = {
   initialIndex: 0
 };
 
