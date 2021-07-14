@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.6.0...@spon/cms@0.6.1) (2021-07-14)
+
+**Note:** Version bump only for package @spon/cms
+
+
+
+
+
 ## [0.6.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/cms@0.5.1...@spon/cms@0.6.0) (2021-07-13)
 
 

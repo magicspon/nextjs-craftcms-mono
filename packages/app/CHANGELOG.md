@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.9.0...@spon/app@0.10.0) (2021-07-14)
+
+
+### Features
+
+* storybook/jest integration ([83f2382](https://github.com/magicspon/nextjs-craftcms-mono/commit/83f2382890c9fd6032bae8fd29ee964845134f80))
+
+
+
 ## [0.9.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.8.2...@spon/app@0.9.0) (2021-07-13)
 
 
