@@ -3,17 +3,14 @@ to: packages/<%= package %>/src/components/<%= h.changeCase.pascalCase(name) %>/
 ---
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import <%= h.changeCase.pascalCase(name) %>, { I<%= h.changeCase.pascalCase(name) %>Props } from '..';
+import { composeStories } from '@storybook/testing-react';
+import * as stories from '../<%= h.changeCase.pascalCase(name) %>.stories';
 
-const defaultProps: I<%= h.changeCase.pascalCase(name) %>Props = {
-  children: 'hello world'
-};
-
-const setup = (props = defaultProps) => render(<<%= h.changeCase.pascalCase(name) %> {...props} />);
+const { Primary } = composeStories(stories);
 
 describe('<%= h.changeCase.pascalCase(name) %>', () => {
   it('renders', () => {
-    setup({children: 'hello world'});
+    render(<Primary />);
     expect(screen.getByText('hello world'));
   });
 });
