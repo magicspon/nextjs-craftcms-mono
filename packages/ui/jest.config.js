@@ -7,7 +7,7 @@ module.exports = {
 	rootDir: './',
 	moduleNameMapper: {
 		'\\.(css)$': 'identity-obj-proxy',
-		'^.+\\.svg$': '<rootDir>/__mocks__/svgrMock.js',
+		'^.+\\.svg$': '<rootDir>/__mocks__/svg.mock.js',
 		...pathsToModuleNameMapper(compilerOptions.paths, {
 			prefix: '<rootDir>/',
 		}),

@@ -8,8 +8,13 @@
 		"format": "prettier --write \"src/**/*.{ts,tsx,json,js,jsx}\"",
 		"check-format": "yarn prettier -- --list-different",
 		"test": "jest",
-		"dev": "start-storybook -p 6006",
-		"build": "build-storybook"
+		"test:generate-output": "jest --json --outputFile=.jest-test-results.json --passWithNoTests",
+		"test:watch": "jest --watch",
+		"coverage": "jest --coverage",
+		"prestart:storybook": "yarn test:generate-output",
+		"start:storybook": "start-storybook -p 6006",
+		"prebuild:storybook": "yarn test:generate-output",
+		"build:storybook": "build-storybook -s ./public"
 	},
 	"dependencies": {
 		"@spon/shared": "^0.1.0",
@@ -22,8 +27,10 @@
 	"private": true,
 	"devDependencies": {
 		"@babel/core": "^7.14.6",
+		"@storybook/addon-a11y": "^6.3.4",
 		"@storybook/addon-actions": "^6.3.2",
 		"@storybook/addon-essentials": "^6.3.4",
+		"@storybook/addon-jest": "^6.3.4",
 		"@storybook/addon-links": "^6.3.4",
 		"@storybook/addon-postcss": "^2.0.0",
 		"@storybook/react": "^6.3.4",
