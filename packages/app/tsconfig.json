@@ -20,7 +20,7 @@
 			"@defs/*": ["src/types/*"],
 			"@utils/*": ["src/utils/*"]
 		},
-		"types": ["cypress", "@testing-library/cypress"]
+		"types": ["cypress", "jest", "@testing-library/cypress"]
 	},
 	"exclude": ["dist", ".next", "out", "next.config.js"],
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

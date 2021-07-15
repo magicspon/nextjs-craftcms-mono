@@ -6,3 +6,4 @@ node_modules/
 
 # production server output
 dist
+.jest-test-results.json
