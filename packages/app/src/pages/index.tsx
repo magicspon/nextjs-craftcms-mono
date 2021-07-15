@@ -9,10 +9,10 @@ export interface IPageProps {
 	[k: string]: any
 }
 
-function Index(props: IPageProps): JSX.Element {
+function Index({ text, ...props }: IPageProps): JSX.Element {
 	return (
 		<div className="flex text-red-500 bg-spam">
-			<p>Home page</p>
+			<p>{text}</p>
 			<pre>{JSON.stringify(props, null, 2)}</pre>
 		</div>
 	)
@@ -36,10 +36,13 @@ export const getStaticProps: GetStaticProps = async ({
 	const { entry } = await client.request(HomeEntryQuery)
 	const { seo, ...pageProps } = entry
 
+	console.log('HELLO')
+
 	return {
 		props: {
 			seo: parseSEO(seo),
 			...pageProps,
+			text: 'Home page',
 		},
 	}
 }

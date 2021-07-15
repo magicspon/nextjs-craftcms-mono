@@ -4,8 +4,8 @@ module.exports = {
 		'!**/*.d.ts',
 		'!**/node_modules/**',
 	],
-	setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-	testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+	setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+	testPathIgnorePatterns: ['/node_modules/', '/.next/', '/cypress/'],
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
 	transform: {
 		'^.+\\.[tj]sx?$': 'babel-jest',

@@ -7,13 +7,12 @@
 		"prettier": "prettier --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
 		"format": "prettier --write \"src/**/*.{ts,tsx,json,js,jsx}\"",
 		"check-format": "yarn prettier -- --list-different",
-		"test": "jest",
-		"test:generate-output": "jest --json --outputFile=.jest-test-results.json --passWithNoTests",
+		"test": "jest --json --outputFile=.jest-test-results.json --passWithNoTests",
 		"test:watch": "jest --watch",
 		"coverage": "jest --coverage",
-		"prestart:storybook": "yarn test:generate-output",
+		"prestart:storybook": "yarn test",
 		"start:storybook": "start-storybook -p 6006",
-		"prebuild:storybook": "yarn test:generate-output",
+		"prebuild:storybook": "yarn test",
 		"build:storybook": "build-storybook -s ./public"
 	},
 	"dependencies": {
