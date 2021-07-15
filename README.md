@@ -12,6 +12,7 @@
 - Lerna
 - Husky
 - Jest
+- Cypruss
 - eslint
 - prettier
 - stylelint
