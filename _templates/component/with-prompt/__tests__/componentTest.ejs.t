@@ -11,6 +11,6 @@ const { Primary } = composeStories(stories);
 describe('<%= h.changeCase.pascalCase(name) %>', () => {
   it('renders', () => {
     render(<Primary />);
-    expect(screen.getByText('hello world'));
+    expect(screen.getByText('hello world')).toBeInTheDocument();
   });
 });

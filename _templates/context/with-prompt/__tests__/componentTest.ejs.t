@@ -14,6 +14,6 @@ const setup = (props = defaultProps) => render(<<%= h.changeCase.pascalCase(name
 describe('<%= h.changeCase.pascalCase(name) %>', () => {
   it('renders', () => {
     setup({children: 'hello world'});
-    expect(screen.getByText('hello world'));
+    expect(screen.getByText('hello world')).toBeInTheDocument();
   });
 });
