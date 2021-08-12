@@ -1,3 +1,3 @@
-const config = require('@spon/shared/postcss.config')
+const config = require('../postcss.config')
 
 module.exports = config
