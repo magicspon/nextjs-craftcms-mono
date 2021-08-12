@@ -1,5 +1,5 @@
 ---
-to: packages/<%= package %>/src/containers/<%= h.changeCase.pascalCase(name) %>/__tests__/<%= h.changeCase.pascalCase(name) %>.test.tsx
+to: packages/frontend/src/containers/<%= h.changeCase.pascalCase(name) %>/__tests__/<%= h.changeCase.pascalCase(name) %>.test.tsx
 ---
 import React from 'react';
 import <%= h.changeCase.pascalCase(name) %>, { I<%= h.changeCase.pascalCase(name) %>Props } from '..';
@@ -14,6 +14,6 @@ const setup = (props = defaultProps) => render(<<%= h.changeCase.pascalCase(name
 describe('<%= h.changeCase.pascalCase(name) %>', () => {
   it('renders', () => {
     setup({children: 'hello world'});
-    expect(screen.getByText('hello world')).toBeInTheDocument();
+    expect(screen.getByText('hello world'));
   });
 });
