@@ -29,6 +29,8 @@ export interface ISEO {
 
 const filterEmptyValues = (item: any): boolean => item?.length !== 0
 
+const flattenValues = R.pipe(R.values, R.filter(filterEmptyValues), R.flatten)
+
 export default function parseSEO(seo: ISeoProps): ISEO {
 	const parsed = R.toPairs(seo).reduce<TSEO>(
 		(acc, [key, value]) => ({ ...acc, [key]: JSON.parse(value) }),
@@ -42,9 +44,9 @@ export default function parseSEO(seo: ISeoProps): ISEO {
 		metaJsonLdContainer,
 	} = parsed
 
-	const meta = R.values(metaTagContainer).filter(filterEmptyValues)
-	const links = R.values(metaLinkContainer).filter(filterEmptyValues)
-	const jsonLd = R.values(metaJsonLdContainer).filter(filterEmptyValues)
+	const meta = flattenValues(metaTagContainer)
+	const links = flattenValues(metaLinkContainer)
+	const jsonLd = flattenValues(metaJsonLdContainer)
 
 	return {
 		title: metaTitleContainer.title.title,
