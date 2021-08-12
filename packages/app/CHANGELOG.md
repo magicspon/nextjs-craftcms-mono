@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.10.2](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.10.1...@spon/app@0.10.2) (2021-08-12)
+
+
+### Bug Fixes
+
+* **app:** flatten seo arrays ([f937326](https://github.com/magicspon/nextjs-craftcms-mono/commit/f937326176b3ea82b0d9bb1cdaebf421058328d5))
+
+
+
 ### [0.10.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.10.0...@spon/app@0.10.1) (2021-07-15)
 
 **Note:** Version bump only for package @spon/app
