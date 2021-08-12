@@ -1,5 +1,5 @@
 ---
-to: packages/<%= package %>/src/components/<%= h.changeCase.pascalCase(name) %>/__tests__/<%= h.changeCase.pascalCase(name) %>.test.tsx
+to: "<%= storybook ? `packages/${package}/src/components/${h.changeCase.pascalCase(name)}/__tests__/${h.changeCase.pascalCase(name)}.test.tsx` : null %>"
 ---
 import React from 'react';
 import { render, screen } from '@testing-library/react';

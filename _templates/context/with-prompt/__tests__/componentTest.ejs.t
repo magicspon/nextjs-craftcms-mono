@@ -1,5 +1,5 @@
 ---
-to: packages/frontend/src/containers/<%= h.changeCase.pascalCase(name) %>/__tests__/<%= h.changeCase.pascalCase(name) %>.test.tsx
+to: packages/<%= package %>/src/containers/<%= h.changeCase.pascalCase(name) %>/__tests__/<%= h.changeCase.pascalCase(name) %>.test.tsx
 ---
 import React from 'react';
 import <%= h.changeCase.pascalCase(name) %>, { I<%= h.changeCase.pascalCase(name) %>Props } from '..';
