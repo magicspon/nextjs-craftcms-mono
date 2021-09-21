@@ -17,7 +17,8 @@
 		"prestart:storybook": "yarn test",
 		"start:storybook": "start-storybook -p 6006",
 		"prebuild:storybook": "yarn test",
-		"build:storybook": "build-storybook -s ./public"
+		"build:storybook": "build-storybook -s ./public",
+		"generate": "graphql-codegen --require dotenv/config --config codegen.json dotenv_config_path=.env.local"
 	},
 	"dependencies": {
 		"@spon/ui": "^0.3.2",
@@ -31,6 +32,11 @@
 	},
 	"private": true,
 	"devDependencies": {
+		"@graphql-codegen/cli": "2.2.0",
+		"@graphql-codegen/introspection": "2.1.0",
+		"@graphql-codegen/typescript": "2.2.2",
+		"@graphql-codegen/typescript-graphql-request": "^4.1.4",
+		"@graphql-codegen/typescript-operations": "2.1.4",
 		"@types/graphql": "^14.5.0",
 		"@types/jest": "^27.0.1",
 		"@types/node": "^16.3.1",

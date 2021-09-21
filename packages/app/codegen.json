@@ -1,0 +1,35 @@
+{
+	"overwrite": true,
+	"hooks": {
+		"afterOneFileWrite": ["prettier --write"]
+	},
+	"schema": [
+		{
+			"${CRAFT_CMS_GRAPHQL_ENDPOINT}": {
+				"headers": {
+					"authorization": "bearer ${CRAFT_CMS_GRAPHQL_TOKEN}"
+				}
+			}
+		}
+	],
+	"documents": "src/**/*.graphql",
+	"generates": {
+		"src/schema/graphql.ts": {
+			"plugins": [
+				"typescript",
+				"typescript-operations",
+				"typescript-graphql-request"
+			],
+			"config": {
+				"withHooks": true,
+				"maybeValue": "T",
+				"avoidOptionals": {
+					"field": true,
+					"inputValue": true,
+					"object": true,
+					"defaultValue": true
+				}
+			}
+		}
+	}
+}

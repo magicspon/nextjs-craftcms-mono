@@ -6,6 +6,7 @@
 - Tailwind
 - Storybook
 - Typescript
+- graphql-codegen/typescript
 - CraftCMS
 - @svgr/webpack
 - Hygen generator
@@ -54,3 +55,7 @@
 - `/packages/cms` : Craft CMS
 - `/packages/app` : Next JS codebase
 - `/packages/ui` : Design system
+
+### TypeScript GraphQL-Request
+
+See https://www.graphql-code-generator.com/docs/plugins/typescript-graphql-request for docs
