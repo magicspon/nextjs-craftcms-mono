@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.10.2...@spon/app@0.11.0) (2021-09-21)
+
+
+### Features
+
+* **app:** add graphql ts codegen ([4961a81](https://github.com/magicspon/nextjs-craftcms-mono/commit/4961a817373b1fb2dcb2cbe96b8afdcd3720cb4a))
+
+
+
 ### [0.10.2](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.10.1...@spon/app@0.10.2) (2021-08-12)
 
 

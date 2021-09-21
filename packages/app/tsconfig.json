@@ -15,6 +15,7 @@
 			"@gql/*": ["src/gql/*"],
 			"@data/*": ["src/data/*"],
 			"@lib/*": ["src/lib/*"],
+			"@schema/*": ["src/schema/*"],
 			"@styles/*": ["src/styles/*"],
 			"@svgs/*": ["src/svgs/*"],
 			"@defs/*": ["src/types/*"],
