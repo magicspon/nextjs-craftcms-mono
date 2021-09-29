@@ -1,6 +1,6 @@
 {
 	"name": "@spon/ui",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"scripts": {
 		"lint": "eslint src",
 		"lint-css": "stylelint ./**/*.css --quiet --fix",

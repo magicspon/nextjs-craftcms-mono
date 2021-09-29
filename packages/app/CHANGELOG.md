@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.11.1](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.11.0...@spon/app@0.11.1) (2021-09-29)
+
+
+### Bug Fixes
+
+* preview api ([a0c7241](https://github.com/magicspon/nextjs-craftcms-mono/commit/a0c72416f7aa77cc2e10e5598b35eed4d272c783))
+
+
+
 ## [0.11.0](https://github.com/magicspon/nextjs-craftcms-mono/compare/@spon/app@0.10.2...@spon/app@0.11.0) (2021-09-21)
 
 
