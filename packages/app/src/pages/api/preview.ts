@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { gql } from 'graphql-request'
 import cmsClient from '@lib/cmsClient'
-import * as R from 'ramda'
 
 export default async (
 	req: NextApiRequest,
@@ -9,7 +8,7 @@ export default async (
 ): Promise<void> => {
 	const { token } = req.query
 
-	if (!token) {
+	if (typeof token !== 'string') {
 		res.status(401).json({ message: 'Token missing' })
 		return
 	}
@@ -18,12 +17,10 @@ export default async (
 		return
 	}
 
-	const secret = Array.isArray(token) ? R.last(token) : token
-
-	const client = cmsClient(secret)
+	const client = cmsClient(token)
 
 	const pageQuery = gql`
-		query ($uid: [String]) {
+		query($uid: [String]) {
 			entry(uid: $uid, status: null) {
 				id
 				uri
@@ -44,7 +41,7 @@ export default async (
 	}
 
 	res.setPreviewData({
-		token: secret,
+		token,
 		typeHandle: data?.entry?.typeHandle,
 	})
 
